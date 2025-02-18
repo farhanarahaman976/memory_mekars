@@ -1,0 +1,12 @@
+# Python Virtual Environment
+venv/
+__pycache__/
+
+# Database & XAMPP Files
+*.sql
+*.log
+.env
+
+# IDE/Editor Config Files
+.vscode/
+.idea/
