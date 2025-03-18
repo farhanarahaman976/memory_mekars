@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Events</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Available Events</h1>
+    </header>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('events') }}">Events</a>
+        <a href="{{ url_for('register') }}">Register</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+
+    <main>
+        {% if events %}
+            <ul class="event-list">
+                {% for event in events %}
+                    <li>
+                        <h2>{{ event[1] }}</h2>
+                        <p>{{ event[2] }}</p>
+                        <p><strong>Date:</strong> {{ event[3] }}</p>
+                        <p><strong>Location:</strong> {{ event[4] }}</p>
+
+                        <img src="{{ url_for('static', filename='images/' + event[5]) }}" alt="{{ event[1] }} Thumbnail">
+
+                        <form action="{{ url_for('book_event', event_id=event[0]) }}" method="post">
+                            <button type="submit">Book Now</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No events available at the moment.</p>
+        {% endif %}
+
+        <!-- Event Gallery Section -->
+        <section class="event-gallery">
+            <h2>Our Event Categories</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/Birthday Parties.jpg') }}" alt="Birthday Parties">
+                <img src="{{ url_for('static', filename='images/Corporate Events.jpg') }}" alt="Corporate Events">
+                <img src="{{ url_for('static', filename='images/Engagement & Anniversaries.jpg') }}" alt="Engagement & Anniversaries">
+                <img src="{{ url_for('static', filename='images/Themed Decorations.jpg') }}" alt="Themed Decorations">
+                <img src="{{ url_for('static', filename='images/Wedding Planning.jpg') }}" alt="Wedding Planning">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
