@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Mekars - Your Ultimate Event Planner</title>
+    <meta name="description" content="Best event management system to plan your perfect events, including bookings, reviews, and custom packages.">
+    <meta name="keywords" content="event management, wedding planning, corporate events, party booking">
+    <meta name="author" content="Farhana Rahman Adiba,Arpita Biswas">
+    <style>
+        #events table {
+            width: 90%; /* Table width বড় করা */
+            max-width: 1200px; /* Maximum width */
+            margin: 20px auto; /* Center alignment */
+            font-size: 1.5rem; /* Font বড় করা */
+            border-collapse: collapse;
+        }
+
+        #events th, #events td {
+            padding: 20px; /* Padding বড় করা */
+            border: 2px solid #000; /* Border মোটা করা */
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        #events th {
+            background-color: rgba(255, 255, 255, 0.9);
+            font-size: 1.6rem; /* Header font বড় করা */
+            color: #000;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static\css\style.css') }}">
+    <link rel="stylesheet" href="static\css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> window.onload = function() { console.log("CSS File Loaded:", document.styleSheets.length); } </script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Memory Mekars</h1>
+        <p>We are ready to celebrate your dream</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="images/about.jpg" alt="About Memory Mekars" width="300px">
+        <p>Memory Mekars is your ultimate event planning partner...</p>
+        <p>We specialize in weddings, corporate events, and private celebrations.</p>
+        <p>Contact us for a seamless and memorable event experience!</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="images/Wedding Planning.jpg" alt="Wedding Planning" loading="lazy" width="200px">
+            <p>Wedding Planning</p>
+        </div>
+        <div class="service">
+            <img src="images/Birthday Parties.jpg" alt="Birthday Parties" loading="lazy" width="200px">
+            <p>Birthday Parties</p>
+        </div>
+        <div class="service">
+            <img src="images/Corporate Events.jpg" alt="Corporate Events" loading="lazy" width="200px">
+            <p>Corporate Events</p>
+        </div>
+        <div class="service">
+            <img src="images/Engagement & Anniversaries.jpg" alt="Engagement & Anniversaries" loading="lazy" width="200px">
+            <p>Engagement & Anniversaries</p>
+        </div>
+        <div class="service">
+            <img src="images/Themed Decorations.jpg" alt="Themed Decorations" loading="lazy" width="200px">
+            <p>Themed Decorations</p>
+        </div>
+    </section>
+    <section class="gallery">
+        <h2>Our Event Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/event1.jpg" alt="Event 1">
+            <img src="images/event2.jpg" alt="Event 2">
+            <img src="images/event3.jpg" alt="Event 3">
+            <img src="images/event4.jpg" alt="Event 4">
+        </div>
+    </section>
+    
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event Name</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>March 20, 2025</td>
+                    <td>Spring Wedding Expo</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr>
+                    <td>April 15, 2025</td>
+                    <td>Luxury Birthday Bash</td>
+                    <td>Khulna</td>
+                </tr>
+                <tr>
+                    <td>June 20, 2025</td>
+                    <td>Corporate Success Meet</td>
+                    <td>Khulna</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="packages">
+        <h2>Our Packages</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Silver Package</h3>
+                <p>🎉 Basic Event Setup</p>
+                <p>📸 Photography & Decoration</p>
+                <p>💰 Price: $500</p>
+            </div>
+    
+            <div class="package">
+                <h3>Gold Package</h3>
+                <p>🎊 Premium Event Planning</p>
+                <p>🎤 DJ, Catering & Lighting</p>
+                <p>💰 Price: $1000</p>
+            </div>
+    
+            <div class="package">
+                <h3>Platinum Package</h3>
+                <p>🎆 Luxury Event Management</p>
+                <p>🎭 Entertainment & Custom Themes</p>
+                <p>💰 Price: $2000</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-container">
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Amazing service! Everything was perfectly managed!"</p>
+                <h4>- Sarah Khan</h4>
+            </div>
+    
+            <div class="review">
+                <p>⭐⭐⭐⭐</p>
+                <p>"Great experience, highly recommend!"</p>
+                <h4>- Rajib Hossain</h4>
+            </div>
+        </div>
+    </section>
+        
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Farhana Rahaman Adiba</strong> - farhana.rahaman37@gmail.com</p>
+        <p><strong>Arpita Biswas</strong> - biswasarpita871@gmail.com</p>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+    
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let images = document.querySelectorAll(".gallery-container img");
+        let index = 0;
+    
+        function changeImage() {
+            images.forEach(img => img.style.display = "none");
+            images[index].style.display = "block";
+            index = (index + 1) % images.length;
+        }
+    
+        setInterval(changeImage, 3000); 
+    </script>
+    
+</body>
+</html>
