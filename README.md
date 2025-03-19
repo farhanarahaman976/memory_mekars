@@ -18,7 +18,7 @@ This is a responsive Event Management Website designed to help users explore and
 ## 📌 Installation & Setup
 🔹 **Clone the Repository**
  
- ``git clone https://github.com/farhanarahaman976/memory_mekars.git``
+  ``git clone https://github.com/farhanarahaman976/memory_mekars.git``
 
 🔹 **Run the Project**
 
@@ -32,15 +32,15 @@ This is a responsive Event Management Website designed to help users explore and
 
 ## 📌 Folder Structure
 - 📂 event-management
--  ┣ 📂 images/         # Website Images
--  ┣ 📂 css/            # Stylesheets
--  ┣ 📜 index.html      # Main HTML File
--  ┣ 📜 README.md       # Documentation File
--  ┣ 📜 styles.css      # Main CSS File
--  ┣ 📜 script.js       # JavaScript (if used)
--  ┣ 📜 database.sql    # Database Schema (if used)
+-  ┣ 📂 images/            # Website Images
+-  ┣ 📂 css/               # Stylesheets
+-  ┣ 📜 index.html         # Main HTML File
+-  ┣ 📜 README.md          # Documentation File
+-  ┣ 📜 styles.css         # Main CSS File
+-  ┣ 📜 script.js          # JavaScript (if used)
+-  ┣ 📜 database.sql       # Database Schema (if used)
 
- ## 📌 Future Enhancements
+## 📌 Future Enhancements
 - 🔹 Event Package Booking System
 - 🔹 User Reviews & Ratings
 - 🔹 Admin Dashboard for Event Management
@@ -48,6 +48,6 @@ This is a responsive Event Management Website designed to help users explore and
 - 🔹 User Authentication & Profile System
 - 🔹 Mobile App Development
   
-  ## 📌 Contributors
+## 📌 Contributors
 - 👩‍💻 Farhana Rahman Adiba
 
